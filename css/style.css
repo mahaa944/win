@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(29, 56, 211);
+}
+
+#demo {
+    color: #94396e;
+    padding: 10px;
+    border :1px solid;
+    border-radius: 5px;
+}
+
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader-con {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1b3127;
+}
+
+.list-group-item {
+    background: transparent;
+}
