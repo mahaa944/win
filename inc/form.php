@@ -16,14 +16,14 @@ if (isset($_POST['submit'])) {
     $sql ="INSERT INTO users (firstname,lastname,email) values ('$firstname','$lastname','$email')";
     
     if (empty($firstname)) {
-        $errors['firstNameError'] = 'يرجى ادخال الاسم الاول';
+        $errors['firstNameError'] = 'الرجاء ادخال الاسم الاول';
     } elseif(empty($lastname)) {
-        $errors['lastNameError'] = 'يرجى ادخال الاسم الاول';
+        $errors['lastNameError'] = 'الرجاء ادخال الاسم الاول';
 
     }elseif(empty($email)){
-        $errors['emailError'] = 'يرجى ادخال الاسم الاول';
+        $errors['emailError'] = 'الرجاء ادخال الاسم الاول';
     }elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors['emailError'] = 'يرجى ادخال الايميل';
+        $errors['emailError'] = 'الرجاء ادخال الايميل';
     }else {
         if (mysqli_query($conn,$sql)) {
             header('location:'.$_SERVER['PHP_SELF']);
