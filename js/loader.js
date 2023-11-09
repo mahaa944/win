@@ -28,8 +28,6 @@ function progressSim() {
     al++;
 }
 
-
-
 const win = document.querySelector("#winner");
 const loader = document.querySelector(".loader-con");
 
