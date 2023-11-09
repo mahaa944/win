@@ -10,7 +10,6 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     counter.innerHTML = days + ' يوم ' + hours + ' ساعة ' + minutes + ' دقيقة ' + seconds + ' ثانية ';
-
     if (distance < 0) {
         clearInterval(x);
         counter.innerHTML = "لقد وصلت متأخرًا";
